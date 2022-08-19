@@ -3,17 +3,20 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define MAX_PLAYERS 30
+#define MAX_MATCHES 22
+
 unsigned short int games = 0, controlPlayers = 0;
 
 typedef struct {
     char id[50];
     char name[50], oldNames[50];
-    size_t kills;
+    int kills;
 } players;
 
 typedef struct {
     unsigned short int totalKills;
-    players acess[30];
+    players acess[MAX_PLAYERS];
 } quake;
 
 void readLine(quake data[], FILE *txt, FILE *txtSaida);
@@ -24,11 +27,11 @@ void sumKills(quake data[]);
 
 int main(int argc, char *argv[]) {
     FILE *arqv = fopen(argv[1], "r"), *arqvSaida;
-    quake data[22];
+    quake data[MAX_MATCHES];
 
-    for (size_t i = 0; i < 22; i++) {
+    for (size_t i = 0; i < MAX_MATCHES; i++) {
         data[i].totalKills = 0;
-        for (size_t j = 0; j < 30; j++) {
+        for (size_t j = 0; j < MAX_PLAYERS; j++) {
             data[i].acess[j].kills = 0;
         }
     }
@@ -63,12 +66,12 @@ void writeJson(quake data[], FILE *txtSaida) {
         fputs("\t\t\t\t{\n", txtSaida);
         fprintf(txtSaida, "\t\t\t\t\t\"id\": %s,\n", data[games - 1].acess[j].id);
         fprintf(txtSaida, "\t\t\t\t\t\"nome\": \"%s\",\n", data[games - 1].acess[j].name);
-        fprintf(txtSaida, "\t\t\t\t\t\"kills\": %ld\n", data[games - 1].acess[j].kills);
+        fprintf(txtSaida, "\t\t\t\t\t\"kills\": %d\n", data[games - 1].acess[j].kills);
         (j == (controlPlayers - 1)) ? fputs("\t\t\t\t}\n", txtSaida) : fputs("\t\t\t\t},\n", txtSaida);
     }
     fputs("\t\t\t]\n", txtSaida);
     fputs("\t\t}\n", txtSaida);
-    games == 21 ? fputs("\t}\n", txtSaida) : fputs("\t},\n", txtSaida);
+    games == MAX_MATCHES-1 ? fputs("\t}\n", txtSaida) : fputs("\t},\n", txtSaida);
 }
 
 void readLine(quake data[], FILE *txt, FILE *txtSaida) {
@@ -99,25 +102,37 @@ void readLine(quake data[], FILE *txt, FILE *txtSaida) {
     }
 }
 void killCheck(char *word, quake data[]) {
-    word = strtok(NULL, " ");  // Alternando para a ID do jogador
-    for (size_t j = 0; j < 30; j++) {
-        if (!strcmp(data[games - 1].acess[j].id, word)) {  // Buscando jogadores que já tenham sido "registrados" para incremento de kill
-            data[games - 1].acess[j].kills += 1;
-            // printf("%s\n", data[games - 1].acess[j].name);
-            // getchar();
-            return;
+    word = strtok(NULL, " ");
+
+    if (strcmp("1022", word) != 0) {  
+        for (size_t j = 0; j < MAX_PLAYERS; j++) {
+            if (!strcmp(data[games - 1].acess[j].id, word)) {  
+                data[games - 1].acess[j].kills += 1;
+                return;
+            }
+        }
+
+        strcpy(data[games - 1].acess[controlPlayers].id, word);
+        word = strtok(NULL, " ");
+        word = strtok(NULL, " ");
+        word = strtok(NULL, " ");
+        strcpy(data[games - 1].acess[controlPlayers].name, word);
+        data[games - 1].acess[controlPlayers].kills += 1;
+        controlPlayers++;
+    } else {
+        word = strtok(NULL, " ");
+        word = strtok(NULL, " ");
+        word = strtok(NULL, " ");
+        word = strtok(NULL, " ");
+        word = strtok(NULL, " ");
+        data[games-1].totalKills+=1;
+        for (size_t j = 0; j < MAX_PLAYERS; j++) {
+            if (!strcmp(data[games - 1].acess[j].name, word)) {
+                data[games - 1].acess[j].kills -= 1;
+                return;
+            }
         }
     }
-
-    strcpy(data[games - 1].acess[controlPlayers].id, word);
-    word = strtok(NULL, " ");
-    word = strtok(NULL, " ");
-    word = strtok(NULL, " ");
-    strcpy(data[games - 1].acess[controlPlayers].name, word);
-    data[games - 1].acess[controlPlayers].kills += 1;
-    // printf("%s\n", data[games - 1].acess[controlPlayers].name);
-    // getchar();
-    controlPlayers++;
 }
 bool checkInit(char *line) {
     char *word = strtok(line, " ");
@@ -135,5 +150,5 @@ void sumKills(quake data[]) {
     for (size_t i = 0; i < controlPlayers; i++) {
         sum += data[games - 1].acess[i].kills;
     }
-    data[games - 1].totalKills = sum;
+    data[games - 1].totalKills += sum;
 }
