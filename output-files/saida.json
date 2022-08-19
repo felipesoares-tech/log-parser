@@ -1,0 +1,655 @@
+[
+	{
+		"game": 1,
+		"status": {
+			"total kills": 0,
+			"players": [
+			]
+		}
+	},
+	{
+		"game": 2,
+		"status": {
+			"total kills": 11,
+			"players": [
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 8
+				},
+				{
+					"id": 2,
+					"nome": "Isgalamido",
+					"kills": 3
+				}
+			]
+		}
+	},
+	{
+		"game": 3,
+		"status": {
+			"total kills": 4,
+			"players": [
+				{
+					"id": 3,
+					"nome": "Isgalamido",
+					"kills": 1
+				},
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 3
+				}
+			]
+		}
+	},
+	{
+		"game": 4,
+		"status": {
+			"total kills": 105,
+			"players": [
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 20
+				},
+				{
+					"id": 2,
+					"nome": "Dono",
+					"kills": 20
+				},
+				{
+					"id": 3,
+					"nome": "Isgalamido",
+					"kills": 27
+				},
+				{
+					"id": 4,
+					"nome": "Zeh",
+					"kills": 22
+				},
+				{
+					"id": 5,
+					"nome": "Assasinu",
+					"kills": 16
+				}
+			]
+		}
+	},
+	{
+		"game": 5,
+		"status": {
+			"total kills": 14,
+			"players": [
+				{
+					"id": 3,
+					"nome": "Isgalamido",
+					"kills": 2
+				},
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 5
+				},
+				{
+					"id": 2,
+					"nome": "Zeh",
+					"kills": 2
+				},
+				{
+					"id": 5,
+					"nome": "Assasinu",
+					"kills": 5
+				}
+			]
+		}
+	},
+	{
+		"game": 6,
+		"status": {
+			"total kills": 29,
+			"players": [
+				{
+					"id": 2,
+					"nome": "Oootsimo",
+					"kills": 9
+				},
+				{
+					"id": 3,
+					"nome": "Isgalamido",
+					"kills": 4
+				},
+				{
+					"id": 4,
+					"nome": "Zeh",
+					"kills": 8
+				},
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 4
+				},
+				{
+					"id": 5,
+					"nome": "Dono",
+					"kills": 2
+				},
+				{
+					"id": 6,
+					"nome": "Maluquinho",
+					"kills": 1
+				},
+				{
+					"id": 7,
+					"nome": "Assasinu",
+					"kills": 1
+				}
+			]
+		}
+	},
+	{
+		"game": 7,
+		"status": {
+			"total kills": 130,
+			"players": [
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 27
+				},
+				{
+					"id": 7,
+					"nome": "Assasinu",
+					"kills": 22
+				},
+				{
+					"id": 5,
+					"nome": "Dono",
+					"kills": 14
+				},
+				{
+					"id": 2,
+					"nome": "Oootsimo",
+					"kills": 24
+				},
+				{
+					"id": 4,
+					"nome": "Zeh",
+					"kills": 14
+				},
+				{
+					"id": 3,
+					"nome": "Isgalamido",
+					"kills": 20
+				},
+				{
+					"id": 6,
+					"nome": "Mal",
+					"kills": 9
+				}
+			]
+		}
+	},
+	{
+		"game": 8,
+		"status": {
+			"total kills": 89,
+			"players": [
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 15
+				},
+				{
+					"id": 3,
+					"nome": "Isgalamido",
+					"kills": 24
+				},
+				{
+					"id": 7,
+					"nome": "Assasinu",
+					"kills": 12
+				},
+				{
+					"id": 4,
+					"nome": "Zeh",
+					"kills": 15
+				},
+				{
+					"id": 5,
+					"nome": "Dono",
+					"kills": 5
+				},
+				{
+					"id": 2,
+					"nome": "Oootsimo",
+					"kills": 17
+				},
+				{
+					"id": 6,
+					"nome": "Mal",
+					"kills": 1
+				}
+			]
+		}
+	},
+	{
+		"game": 9,
+		"status": {
+			"total kills": 67,
+			"players": [
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 11
+				},
+				{
+					"id": 2,
+					"nome": "Oootsimo",
+					"kills": 9
+				},
+				{
+					"id": 6,
+					"nome": "Mal",
+					"kills": 7
+				},
+				{
+					"id": 5,
+					"nome": "Dono",
+					"kills": 12
+				},
+				{
+					"id": 4,
+					"nome": "Zeh",
+					"kills": 15
+				},
+				{
+					"id": 7,
+					"nome": "Assasinu",
+					"kills": 11
+				},
+				{
+					"id": 3,
+					"nome": "Isgalamido",
+					"kills": 2
+				}
+			]
+		}
+	},
+	{
+		"game": 10,
+		"status": {
+			"total kills": 60,
+			"players": [
+				{
+					"id": 6,
+					"nome": "Mal",
+					"kills": 6
+				},
+				{
+					"id": 7,
+					"nome": "Assasinu",
+					"kills": 5
+				},
+				{
+					"id": 3,
+					"nome": "Dono",
+					"kills": 5
+				},
+				{
+					"id": 5,
+					"nome": "Chessus",
+					"kills": 6
+				},
+				{
+					"id": 4,
+					"nome": "Zeh",
+					"kills": 9
+				},
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 18
+				},
+				{
+					"id": 8,
+					"nome": "Isgalamido",
+					"kills": 10
+				},
+				{
+					"id": 2,
+					"nome": "Oootsimo",
+					"kills": 1
+				}
+			]
+		}
+	},
+	{
+		"game": 11,
+		"status": {
+			"total kills": 20,
+			"players": [
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 8
+				},
+				{
+					"id": 5,
+					"nome": "Oootsimo",
+					"kills": 4
+				},
+				{
+					"id": 2,
+					"nome": "Isgalamido",
+					"kills": 7
+				},
+				{
+					"id": 3,
+					"nome": "Dono",
+					"kills": 1
+				}
+			]
+		}
+	},
+	{
+		"game": 12,
+		"status": {
+			"total kills": 160,
+			"players": [
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 39
+				},
+				{
+					"id": 7,
+					"nome": "Assasinu",
+					"kills": 23
+				},
+				{
+					"id": 4,
+					"nome": "Zeh",
+					"kills": 14
+				},
+				{
+					"id": 2,
+					"nome": "Isgalamido",
+					"kills": 26
+				},
+				{
+					"id": 6,
+					"nome": "Chessus",
+					"kills": 17
+				},
+				{
+					"id": 5,
+					"nome": "Oootsimo",
+					"kills": 22
+				},
+				{
+					"id": 8,
+					"nome": "Mal",
+					"kills": 8
+				},
+				{
+					"id": 3,
+					"nome": "Dono",
+					"kills": 11
+				}
+			]
+		}
+	},
+	{
+		"game": 13,
+		"status": {
+			"total kills": 6,
+			"players": [
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 2
+				},
+				{
+					"id": 5,
+					"nome": "Oootsimo",
+					"kills": 2
+				},
+				{
+					"id": 4,
+					"nome": "Zeh",
+					"kills": 2
+				}
+			]
+		}
+	},
+	{
+		"game": 14,
+		"status": {
+			"total kills": 122,
+			"players": [
+				{
+					"id": 2,
+					"nome": "Isgalamido",
+					"kills": 25
+				},
+				{
+					"id": 6,
+					"nome": "Chessus",
+					"kills": 10
+				},
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 36
+				},
+				{
+					"id": 7,
+					"nome": "Assasinu",
+					"kills": 12
+				},
+				{
+					"id": 3,
+					"nome": "Dono",
+					"kills": 9
+				},
+				{
+					"id": 4,
+					"nome": "Zeh",
+					"kills": 12
+				},
+				{
+					"id": 5,
+					"nome": "Oootsimo",
+					"kills": 12
+				},
+				{
+					"id": 8,
+					"nome": "Mal",
+					"kills": 6
+				}
+			]
+		}
+	},
+	{
+		"game": 15,
+		"status": {
+			"total kills": 3,
+			"players": [
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 3
+				}
+			]
+		}
+	},
+	{
+		"game": 16,
+		"status": {
+			"total kills": 0,
+			"players": [
+			]
+		}
+	},
+	{
+		"game": 17,
+		"status": {
+			"total kills": 13,
+			"players": [
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 9
+				},
+				{
+					"id": 4,
+					"nome": "Isgalamido",
+					"kills": 1
+				},
+				{
+					"id": 6,
+					"nome": "Zeh",
+					"kills": 1
+				},
+				{
+					"id": 3,
+					"nome": "Oootsimo",
+					"kills": 2
+				}
+			]
+		}
+	},
+	{
+		"game": 18,
+		"status": {
+			"total kills": 7,
+			"players": [
+				{
+					"id": 6,
+					"nome": "Zeh",
+					"kills": 2
+				},
+				{
+					"id": 2,
+					"nome": "Isgalamido",
+					"kills": 1
+				},
+				{
+					"id": 5,
+					"nome": "Assasinu",
+					"kills": 2
+				},
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 2
+				}
+			]
+		}
+	},
+	{
+		"game": 19,
+		"status": {
+			"total kills": 95,
+			"players": [
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 13
+				},
+				{
+					"id": 6,
+					"nome": "Zeh",
+					"kills": 21
+				},
+				{
+					"id": 2,
+					"nome": "Isgalamido",
+					"kills": 15
+				},
+				{
+					"id": 3,
+					"nome": "Oootsimo",
+					"kills": 11
+				},
+				{
+					"id": 4,
+					"nome": "Dono",
+					"kills": 15
+				},
+				{
+					"id": 5,
+					"nome": "Assasinu",
+					"kills": 12
+				},
+				{
+					"id": 7,
+					"nome": "Mal",
+					"kills": 8
+				}
+			]
+		}
+	},
+	{
+		"game": 20,
+		"status": {
+			"total kills": 3,
+			"players": [
+				{
+					"id": 4,
+					"nome": "Dono",
+					"kills": 2
+				},
+				{
+					"id": 3,
+					"nome": "Oootsimo",
+					"kills": 1
+				}
+			]
+		}
+	},
+	{
+		"game": 21,
+		"status": {
+			"total kills": 131,
+			"players": [
+				{
+					"id": 4,
+					"nome": "Dono",
+					"kills": 16
+				},
+				{
+					"id": 1022,
+					"nome": "<world>",
+					"kills": 17
+				},
+				{
+					"id": 6,
+					"nome": "Zeh",
+					"kills": 21
+				},
+				{
+					"id": 2,
+					"nome": "Isgalamido",
+					"kills": 19
+				},
+				{
+					"id": 5,
+					"nome": "Assasinu",
+					"kills": 22
+				},
+				{
+					"id": 3,
+					"nome": "Oootsimo",
+					"kills": 24
+				},
+				{
+					"id": 7,
+					"nome": "Mal",
+					"kills": 12
+				}
+			]
+		}
+	}
+]
