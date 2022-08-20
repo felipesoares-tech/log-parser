@@ -25,10 +25,16 @@ void killCheck(char *word, quake data[]);
 void writeJson(quake data[], FILE *txtSaida);
 void sumKills(quake data[]);
 void changeCheck(quake data[], FILE *txt);
+void insertNames(char *vetChar, char *word, char *lineComplete);
 
 int main(int argc, char *argv[]) {
-    FILE *arqv = fopen("/home/felipe/Documentos/github_repositorios/log-parser/input-files/Quake.txt", "r"), *arqvSaida;
+    FILE *arqv = fopen(argv[1], "r"), *arqvSaida;
     quake data[MAX_MATCHES];
+
+    if (!arqv) {
+        perror("error");
+        exit(1);
+    }
 
     for (size_t i = 0; i < MAX_MATCHES; i++) {
         data[i].totalKills = 0;
@@ -36,11 +42,7 @@ int main(int argc, char *argv[]) {
             data[i].acess[j].kills = 0;
         }
     }
-    if (!arqv) {
-        perror("error");
-        exit(1);
-    }
-    arqvSaida = fopen("/home/felipe/Documentos/github_repositorios/log-parser/output-files/saida.json", "w+");
+    arqvSaida = fopen(argv[2], "w+");
 
     if (!arqvSaida) {
         perror("error");
@@ -77,7 +79,7 @@ void writeJson(quake data[], FILE *txtSaida) {
 }
 
 void readLine(quake data[], FILE *txt, FILE *txtSaida) {
-    char line[400];
+    char line[400], lineComplete[400];
     memset(line, '\0', 400);
     fgets(line, 400, txt);
 
@@ -87,9 +89,7 @@ void readLine(quake data[], FILE *txt, FILE *txtSaida) {
         do {
             while (word) {
                 if (!strcmp("ClientUserinfoChanged:", word)) {
-                    word = strtok(NULL, " ");
-                    word = strtok(NULL, "n\\");
-                    strcpy(data[games - 1].acess[controlPlayers].oldNames, word);
+                    insertNames(data[games - 1].acess[controlPlayers].oldNames, word, lineComplete);
                     changeCheck(data, txt);
                 }
                 if (!strcmp("Kill:", word)) {
@@ -98,14 +98,13 @@ void readLine(quake data[], FILE *txt, FILE *txtSaida) {
 
                 if (!strcmp("ShutdownGame:\r\n", word)) {
                     writeJson(data, txtSaida);
-                    for (size_t i = 0; i < MAX_PLAYERS; i++)
-                    {
-                    memset(data[games-1].acess[i].id,'\0',50);
-                    memset(data[games-1].acess[i].name,'\0',50);
-                    memset(data[games-1].acess[i].oldNames,'\0',50);
-                    data[games-1].acess[i].kills =0;
+                    for (size_t i = 0; i < MAX_PLAYERS; i++) {
+                        memset(data[games - 1].acess[i].id, '\0', 50);
+                        memset(data[games - 1].acess[i].name, '\0', 50);
+                        memset(data[games - 1].acess[i].oldNames, '\0', 50);
+                        data[games - 1].acess[i].kills = 0;
                     }
-                    
+
                     controlPlayers = 0;
                     return;
                 }
@@ -113,6 +112,7 @@ void readLine(quake data[], FILE *txt, FILE *txtSaida) {
             }
             memset(line, '\0', 400);
             fgets(line, 400, txt);
+            strcpy(lineComplete, line);
             word = strtok(line, " ");
         } while (true);
     }
@@ -133,6 +133,15 @@ void killCheck(char *word, quake data[]) {
         word = strtok(NULL, " ");
         word = strtok(NULL, " ");
         strcpy(data[games - 1].acess[controlPlayers].name, word);
+
+        word = strtok(NULL, " ");
+        char *pAux;
+        while (strcmp(word, "killed") != 0) {
+            pAux = strchr(data[games - 1].acess[controlPlayers].name, '\0');
+            *pAux = ' ';
+            strcat(data[games - 1].acess[controlPlayers].name, word);
+            word = strtok(NULL, " ");
+        }
         data[games - 1].acess[controlPlayers].kills += 1;
         controlPlayers++;
     } else {
@@ -169,15 +178,27 @@ void sumKills(quake data[]) {
     data[games - 1].totalKills += sum;
 }
 void changeCheck(quake data[], FILE *txt) {
-    char line[400], *word;
+    char line[400], lineComplete[400], *word;
+
     fgets(line, 400, txt);
+    strcpy(lineComplete, line);
     word = strtok(line, " ");
     word = strtok(NULL, " ");
     if (!strcmp("ClientUserinfoChanged:", word)) {
         word = strtok(NULL, " ");
         strcpy(data[games - 1].acess[controlPlayers].id, word);
-        word = strtok(NULL, "n\\");
-        strcpy(data[games - 1].acess[controlPlayers].name, word);
+        insertNames(data[games - 1].acess[controlPlayers].name, word, lineComplete);
         controlPlayers++;
     }
+}
+void insertNames(char *vetChar, char *word, char *lineComplete) {
+    unsigned short int cont = 0;
+    word = strchr(lineComplete, '\\');
+    word += 1;
+    strcpy(lineComplete, word);
+    while (lineComplete[cont] != '\\') {
+        vetChar[cont] = lineComplete[cont];
+        cont++;
+    }
+    vetChar[cont] = '\0';
 }

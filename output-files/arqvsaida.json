@@ -26,9 +26,9 @@
 				},
 				{
 					"id": 3,
-					"nome": "Moci",
+					"nome": "Mocinha",
 					"kills": 0,
-					"old_names": ["Do"]
+					"old_names": ["Dono da Bola"]
 				}
 			]
 		}
@@ -40,9 +40,9 @@
 			"players": [
 				{
 					"id": 2,
-					"nome": "Moci",
+					"nome": "Mocinha",
 					"kills": 0,
-					"old_names": ["Do"]
+					"old_names": ["Dono da Bola"]
 				},
 				{
 					"id": 3,
@@ -56,12 +56,12 @@
 	{
 		"game": 4,
 		"status": {
-			"total kills": 89,
+			"total kills": 97,
 			"players": [
 				{
 					"id": 2,
-					"nome": "Dono",
-					"kills": 14,
+					"nome": "Dono da Bola",
+					"kills": 20,
 					"old_names": ["Zeh"]
 				},
 				{
@@ -78,9 +78,9 @@
 				},
 				{
 					"id": 5,
-					"nome": "Assasinu",
-					"kills": 14,
-					"old_names": ["Assasi"]
+					"nome": "Assasinu Credi",
+					"kills": 16,
+					"old_names": ["Assasinu Credi"]
 				}
 			]
 		}
@@ -88,13 +88,13 @@
 	{
 		"game": 5,
 		"status": {
-			"total kills": 10,
+			"total kills": 13,
 			"players": [
 				{
 					"id": 3,
 					"nome": "Isgalamido",
 					"kills": 2,
-					"old_names": ["Assasi"]
+					"old_names": ["Assasinu Credi"]
 				},
 				{
 					"id": 2,
@@ -104,8 +104,8 @@
 				},
 				{
 					"id": 5,
-					"nome": "Assasinu",
-					"kills": 2,
+					"nome": "Assasinu Credi",
+					"kills": 5,
 					"old_names": [""]
 				}
 			]
@@ -120,7 +120,7 @@
 					"id": 2,
 					"nome": "Oootsimo",
 					"kills": 8,
-					"old_names": ["Fasa"]
+					"old_names": ["Fasano Again"]
 				},
 				{
 					"id": 3,
@@ -136,21 +136,21 @@
 				},
 				{
 					"id": 5,
-					"nome": "Do",
+					"nome": "Dono da Bola",
 					"kills": 2,
-					"old_names": ["U"]
+					"old_names": ["UnnamedPlayer"]
 				},
 				{
 					"id": 6,
 					"nome": "Maluquinho",
 					"kills": 0,
-					"old_names": ["Maluqui"]
+					"old_names": ["Maluquinho"]
 				},
 				{
 					"id": 7,
-					"nome": "Assasinu",
+					"nome": "Assasinu Credi",
 					"kills": 1,
-					"old_names": ["Assasi"]
+					"old_names": ["Assasinu Credi"]
 				}
 			]
 		}
@@ -158,18 +158,18 @@
 	{
 		"game": 7,
 		"status": {
-			"total kills": 107,
+			"total kills": 108,
 			"players": [
 				{
 					"id": 7,
-					"nome": "Assasinu",
+					"nome": "Assasinu Credi",
 					"kills": 22,
-					"old_names": ["Assasi"]
+					"old_names": ["Assasinu Credi"]
 				},
 				{
 					"id": 5,
-					"nome": "Dono",
-					"kills": 13,
+					"nome": "Dono da Bola",
+					"kills": 14,
 					"old_names": [""]
 				},
 				{
@@ -202,18 +202,18 @@
 	{
 		"game": 8,
 		"status": {
-			"total kills": 75,
+			"total kills": 79,
 			"players": [
 				{
 					"id": 3,
 					"nome": "Isgalamido",
 					"kills": 20,
-					"old_names": ["Assasi"]
+					"old_names": ["Assasinu Credi"]
 				},
 				{
 					"id": 7,
-					"nome": "Assasinu",
-					"kills": 10,
+					"nome": "Assasinu Credi",
+					"kills": 12,
 					"old_names": [""]
 				},
 				{
@@ -224,8 +224,8 @@
 				},
 				{
 					"id": 5,
-					"nome": "Dono",
-					"kills": 3,
+					"nome": "Dono da Bola",
+					"kills": 5,
 					"old_names": [""]
 				},
 				{
@@ -246,13 +246,13 @@
 	{
 		"game": 9,
 		"status": {
-			"total kills": 59,
+			"total kills": 60,
 			"players": [
 				{
 					"id": 2,
 					"nome": "Oootsimo",
 					"kills": 9,
-					"old_names": ["Assasi"]
+					"old_names": ["Assasinu Credi"]
 				},
 				{
 					"id": 6,
@@ -262,8 +262,8 @@
 				},
 				{
 					"id": 5,
-					"nome": "Dono",
-					"kills": 11,
+					"nome": "Dono da Bola",
+					"kills": 12,
 					"old_names": [""]
 				},
 				{
@@ -274,7 +274,7 @@
 				},
 				{
 					"id": 7,
-					"nome": "Assasinu",
+					"nome": "Assasinu Credi",
 					"kills": 11,
 					"old_names": [""]
 				},
@@ -290,13 +290,13 @@
 	{
 		"game": 10,
 		"status": {
-			"total kills": 37,
+			"total kills": 41,
 			"players": [
 				{
 					"id": 2,
 					"nome": "Oootsimo",
 					"kills": -1,
-					"old_names": ["Assasi"]
+					"old_names": ["Assasinu Credi"]
 				},
 				{
 					"id": 5,
@@ -306,8 +306,8 @@
 				},
 				{
 					"id": 3,
-					"nome": "Dono",
-					"kills": 2,
+					"nome": "Dono da Bola",
+					"kills": 4,
 					"old_names": [""]
 				},
 				{
@@ -330,8 +330,8 @@
 				},
 				{
 					"id": 7,
-					"nome": "Assasinu",
-					"kills": 2,
+					"nome": "Assasinu Credi",
+					"kills": 4,
 					"old_names": [""]
 				}
 			]
@@ -344,15 +344,15 @@
 			"players": [
 				{
 					"id": 3,
-					"nome": "Do",
+					"nome": "Dono da Bola",
 					"kills": 1,
-					"old_names": ["Do"]
+					"old_names": ["Dono da Bola"]
 				},
 				{
 					"id": 3,
-					"nome": "Do",
+					"nome": "Dono da Bola",
 					"kills": 0,
-					"old_names": ["Do"]
+					"old_names": ["Dono da Bola"]
 				},
 				{
 					"id": 2,
@@ -382,7 +382,7 @@
 					"id": 5,
 					"nome": "Oootsimo",
 					"kills": 4,
-					"old_names": ["Assasi"]
+					"old_names": ["Assasinu Credi"]
 				}
 			]
 		}
@@ -390,12 +390,12 @@
 	{
 		"game": 12,
 		"status": {
-			"total kills": 128,
+			"total kills": 135,
 			"players": [
 				{
 					"id": 7,
-					"nome": "Assasinu",
-					"kills": 20,
+					"nome": "Assasinu Credi",
+					"kills": 23,
 					"old_names": ["Mal"]
 				},
 				{
@@ -430,8 +430,8 @@
 				},
 				{
 					"id": 3,
-					"nome": "Dono",
-					"kills": 7,
+					"nome": "Dono da Bola",
+					"kills": 11,
 					"old_names": [""]
 				}
 			]
@@ -460,7 +460,7 @@
 	{
 		"game": 14,
 		"status": {
-			"total kills": 89,
+			"total kills": 101,
 			"players": [
 				{
 					"id": 2,
@@ -476,14 +476,14 @@
 				},
 				{
 					"id": 7,
-					"nome": "Assasinu",
-					"kills": 7,
+					"nome": "Assasinu Credi",
+					"kills": 12,
 					"old_names": [""]
 				},
 				{
 					"id": 3,
-					"nome": "Dono",
-					"kills": 2,
+					"nome": "Dono da Bola",
+					"kills": 9,
 					"old_names": [""]
 				},
 				{
@@ -514,9 +514,9 @@
 			"players": [
 				{
 					"id": 2,
-					"nome": "Do",
+					"nome": "Dono da Bola",
 					"kills": 0,
-					"old_names": ["Do"]
+					"old_names": ["Dono da Bola"]
 				},
 				{
 					"id": 3,
@@ -566,9 +566,9 @@
 				},
 				{
 					"id": 2,
-					"nome": "Do",
+					"nome": "Dono da Bola",
 					"kills": 0,
-					"old_names": ["Do"]
+					"old_names": ["Dono da Bola"]
 				},
 				{
 					"id": 4,
@@ -600,7 +600,7 @@
 					"id": 6,
 					"nome": "Zeh",
 					"kills": 2,
-					"old_names": ["Do"]
+					"old_names": ["Dono da Bola"]
 				},
 				{
 					"id": 2,
@@ -610,13 +610,13 @@
 				},
 				{
 					"id": 4,
-					"nome": "Do",
+					"nome": "Dono da Bola",
 					"kills": 0,
-					"old_names": ["Do"]
+					"old_names": ["Dono da Bola"]
 				},
 				{
 					"id": 5,
-					"nome": "Assasinu",
+					"nome": "Assasinu Credi",
 					"kills": 2,
 					"old_names": [""]
 				}
@@ -626,7 +626,7 @@
 	{
 		"game": 19,
 		"status": {
-			"total kills": 85,
+			"total kills": 88,
 			"players": [
 				{
 					"id": 6,
@@ -648,14 +648,14 @@
 				},
 				{
 					"id": 4,
-					"nome": "Dono",
+					"nome": "Dono da Bola",
 					"kills": 15,
 					"old_names": [""]
 				},
 				{
 					"id": 5,
-					"nome": "Assasinu",
-					"kills": 9,
+					"nome": "Assasinu Credi",
+					"kills": 12,
 					"old_names": [""]
 				},
 				{
@@ -674,7 +674,7 @@
 			"players": [
 				{
 					"id": 4,
-					"nome": "Dono",
+					"nome": "Dono da Bola",
 					"kills": 2,
 					"old_names": ["Mal"]
 				},
@@ -690,12 +690,12 @@
 	{
 		"game": 21,
 		"status": {
-			"total kills": 117,
+			"total kills": 122,
 			"players": [
 				{
 					"id": 4,
-					"nome": "Dono",
-					"kills": 14,
+					"nome": "Dono da Bola",
+					"kills": 16,
 					"old_names": ["Mal"]
 				},
 				{
@@ -712,8 +712,8 @@
 				},
 				{
 					"id": 5,
-					"nome": "Assasinu",
-					"kills": 19,
+					"nome": "Assasinu Credi",
+					"kills": 22,
 					"old_names": [""]
 				},
 				{
