@@ -4,18 +4,31 @@
 		"status": {
 			"total kills": 0,
 			"players": [
+				{
+					"id": 2,
+					"nome": "Isgalamido",
+					"kills": 0,
+					"old_names": ["Isgalamido"]
+				}
 			]
 		}
 	},
 	{
 		"game": 2,
 		"status": {
-			"total kills": 6,
+			"total kills": 5,
 			"players": [
 				{
 					"id": 2,
 					"nome": "Isgalamido",
-					"kills": -2
+					"kills": -3,
+					"old_names": ["Isgalamido"]
+				},
+				{
+					"id": 3,
+					"nome": "Moci",
+					"kills": 0,
+					"old_names": ["Do"]
 				}
 			]
 		}
@@ -23,12 +36,19 @@
 	{
 		"game": 3,
 		"status": {
-			"total kills": 4,
+			"total kills": 3,
 			"players": [
+				{
+					"id": 2,
+					"nome": "Moci",
+					"kills": 0,
+					"old_names": ["Do"]
+				},
 				{
 					"id": 3,
 					"nome": "Isgalamido",
-					"kills": 1
+					"kills": 0,
+					"old_names": ["Isgalamido"]
 				}
 			]
 		}
@@ -41,22 +61,26 @@
 				{
 					"id": 2,
 					"nome": "Dono",
-					"kills": 14
+					"kills": 14,
+					"old_names": ["Zeh"]
 				},
 				{
 					"id": 3,
 					"nome": "Isgalamido",
-					"kills": 21
+					"kills": 21,
+					"old_names": [""]
 				},
 				{
 					"id": 4,
 					"nome": "Zeh",
-					"kills": 20
+					"kills": 20,
+					"old_names": [""]
 				},
 				{
 					"id": 5,
 					"nome": "Assasinu",
-					"kills": 14
+					"kills": 14,
+					"old_names": ["Assasi"]
 				}
 			]
 		}
@@ -69,17 +93,20 @@
 				{
 					"id": 3,
 					"nome": "Isgalamido",
-					"kills": 2
+					"kills": 2,
+					"old_names": ["Assasi"]
 				},
 				{
 					"id": 2,
 					"nome": "Zeh",
-					"kills": 1
+					"kills": 1,
+					"old_names": ["Zeh"]
 				},
 				{
 					"id": 5,
 					"nome": "Assasinu",
-					"kills": 2
+					"kills": 2,
+					"old_names": [""]
 				}
 			]
 		}
@@ -87,37 +114,43 @@
 	{
 		"game": 6,
 		"status": {
-			"total kills": 25,
+			"total kills": 24,
 			"players": [
 				{
 					"id": 2,
 					"nome": "Oootsimo",
-					"kills": 8
+					"kills": 8,
+					"old_names": ["Fasa"]
 				},
 				{
 					"id": 3,
 					"nome": "Isgalamido",
-					"kills": 3
+					"kills": 2,
+					"old_names": ["Zeh"]
 				},
 				{
 					"id": 4,
 					"nome": "Zeh",
-					"kills": 7
+					"kills": 7,
+					"old_names": ["Zeh"]
 				},
 				{
 					"id": 5,
-					"nome": "Dono",
-					"kills": 2
+					"nome": "Do",
+					"kills": 2,
+					"old_names": ["U"]
 				},
 				{
 					"id": 6,
 					"nome": "Maluquinho",
-					"kills": 0
+					"kills": 0,
+					"old_names": ["Maluqui"]
 				},
 				{
 					"id": 7,
 					"nome": "Assasinu",
-					"kills": 1
+					"kills": 1,
+					"old_names": ["Assasi"]
 				}
 			]
 		}
@@ -130,32 +163,38 @@
 				{
 					"id": 7,
 					"nome": "Assasinu",
-					"kills": 22
+					"kills": 22,
+					"old_names": ["Assasi"]
 				},
 				{
 					"id": 5,
 					"nome": "Dono",
-					"kills": 13
+					"kills": 13,
+					"old_names": [""]
 				},
 				{
 					"id": 2,
 					"nome": "Oootsimo",
-					"kills": 20
+					"kills": 20,
+					"old_names": [""]
 				},
 				{
 					"id": 4,
 					"nome": "Zeh",
-					"kills": 11
+					"kills": 11,
+					"old_names": [""]
 				},
 				{
 					"id": 3,
 					"nome": "Isgalamido",
-					"kills": 16
+					"kills": 16,
+					"old_names": [""]
 				},
 				{
 					"id": 6,
 					"nome": "Mal",
-					"kills": -2
+					"kills": -2,
+					"old_names": [""]
 				}
 			]
 		}
@@ -168,32 +207,38 @@
 				{
 					"id": 3,
 					"nome": "Isgalamido",
-					"kills": 20
+					"kills": 20,
+					"old_names": ["Assasi"]
 				},
 				{
 					"id": 7,
 					"nome": "Assasinu",
-					"kills": 10
+					"kills": 10,
+					"old_names": [""]
 				},
 				{
 					"id": 4,
 					"nome": "Zeh",
-					"kills": 12
+					"kills": 12,
+					"old_names": [""]
 				},
 				{
 					"id": 5,
 					"nome": "Dono",
-					"kills": 3
+					"kills": 3,
+					"old_names": [""]
 				},
 				{
 					"id": 2,
 					"nome": "Oootsimo",
-					"kills": 17
+					"kills": 17,
+					"old_names": [""]
 				},
 				{
 					"id": 6,
 					"nome": "Mal",
-					"kills": -2
+					"kills": -2,
+					"old_names": [""]
 				}
 			]
 		}
@@ -206,32 +251,38 @@
 				{
 					"id": 2,
 					"nome": "Oootsimo",
-					"kills": 9
+					"kills": 9,
+					"old_names": ["Assasi"]
 				},
 				{
 					"id": 6,
 					"nome": "Mal",
-					"kills": 3
+					"kills": 3,
+					"old_names": [""]
 				},
 				{
 					"id": 5,
 					"nome": "Dono",
-					"kills": 11
+					"kills": 11,
+					"old_names": [""]
 				},
 				{
 					"id": 4,
 					"nome": "Zeh",
-					"kills": 12
+					"kills": 12,
+					"old_names": [""]
 				},
 				{
 					"id": 7,
 					"nome": "Assasinu",
-					"kills": 11
+					"kills": 11,
+					"old_names": [""]
 				},
 				{
 					"id": 3,
 					"nome": "Isgalamido",
-					"kills": 2
+					"kills": 2,
+					"old_names": ["Isgalamido"]
 				}
 			]
 		}
@@ -239,42 +290,49 @@
 	{
 		"game": 10,
 		"status": {
-			"total kills": 43,
+			"total kills": 37,
 			"players": [
 				{
-					"id": 6,
-					"nome": "Mal",
-					"kills": 1
-				},
-				{
-					"id": 7,
-					"nome": "Assasinu",
-					"kills": 3
-				},
-				{
-					"id": 3,
-					"nome": "Dono",
-					"kills": 3
+					"id": 2,
+					"nome": "Oootsimo",
+					"kills": -1,
+					"old_names": ["Assasi"]
 				},
 				{
 					"id": 5,
 					"nome": "Chessus",
-					"kills": 5
+					"kills": 4,
+					"old_names": ["Zeh"]
 				},
 				{
-					"id": 4,
-					"nome": "Zeh",
-					"kills": 7
+					"id": 3,
+					"nome": "Dono",
+					"kills": 2,
+					"old_names": [""]
+				},
+				{
+					"id": 6,
+					"nome": "Mal",
+					"kills": 1,
+					"old_names": ["Isgalamido"]
 				},
 				{
 					"id": 8,
 					"nome": "Isgalamido",
-					"kills": 6
+					"kills": 5,
+					"old_names": ["Isgalamido"]
 				},
 				{
-					"id": 2,
-					"nome": "Oootsimo",
-					"kills": 0
+					"id": 4,
+					"nome": "Zeh",
+					"kills": 7,
+					"old_names": [""]
+				},
+				{
+					"id": 7,
+					"nome": "Assasinu",
+					"kills": 2,
+					"old_names": [""]
 				}
 			]
 		}
@@ -282,22 +340,49 @@
 	{
 		"game": 11,
 		"status": {
-			"total kills": 20,
+			"total kills": 18,
 			"players": [
 				{
-					"id": 5,
-					"nome": "Oootsimo",
-					"kills": 4
+					"id": 3,
+					"nome": "Do",
+					"kills": 1,
+					"old_names": ["Do"]
+				},
+				{
+					"id": 3,
+					"nome": "Do",
+					"kills": 0,
+					"old_names": ["Do"]
 				},
 				{
 					"id": 2,
 					"nome": "Isgalamido",
-					"kills": 7
+					"kills": 5,
+					"old_names": ["Isgalamido"]
 				},
 				{
-					"id": 3,
-					"nome": "Dono",
-					"kills": 1
+					"id": 4,
+					"nome": "Zeh",
+					"kills": 0,
+					"old_names": ["Oootsimo"]
+				},
+				{
+					"id": 6,
+					"nome": "Chessus",
+					"kills": 0,
+					"old_names": ["Chessus"]
+				},
+				{
+					"id": 4,
+					"nome": "Zeh",
+					"kills": 0,
+					"old_names": ["Zeh"]
+				},
+				{
+					"id": 5,
+					"nome": "Oootsimo",
+					"kills": 4,
+					"old_names": ["Assasi"]
 				}
 			]
 		}
@@ -310,37 +395,44 @@
 				{
 					"id": 7,
 					"nome": "Assasinu",
-					"kills": 20
+					"kills": 20,
+					"old_names": ["Mal"]
 				},
 				{
 					"id": 4,
 					"nome": "Zeh",
-					"kills": 13
+					"kills": 13,
+					"old_names": [""]
 				},
 				{
 					"id": 2,
 					"nome": "Isgalamido",
-					"kills": 26
+					"kills": 26,
+					"old_names": [""]
 				},
 				{
 					"id": 6,
 					"nome": "Chessus",
-					"kills": 14
+					"kills": 14,
+					"old_names": [""]
 				},
 				{
 					"id": 5,
 					"nome": "Oootsimo",
-					"kills": 13
+					"kills": 13,
+					"old_names": [""]
 				},
 				{
 					"id": 8,
 					"nome": "Mal",
-					"kills": -4
+					"kills": -4,
+					"old_names": [""]
 				},
 				{
 					"id": 3,
 					"nome": "Dono",
-					"kills": 7
+					"kills": 7,
+					"old_names": [""]
 				}
 			]
 		}
@@ -353,12 +445,14 @@
 				{
 					"id": 5,
 					"nome": "Oootsimo",
-					"kills": 2
+					"kills": 2,
+					"old_names": ["Mal"]
 				},
 				{
 					"id": 4,
 					"nome": "Zeh",
-					"kills": 2
+					"kills": 2,
+					"old_names": [""]
 				}
 			]
 		}
@@ -371,37 +465,44 @@
 				{
 					"id": 2,
 					"nome": "Isgalamido",
-					"kills": 22
+					"kills": 22,
+					"old_names": ["Mal"]
 				},
 				{
 					"id": 6,
 					"nome": "Chessus",
-					"kills": 7
+					"kills": 7,
+					"old_names": [""]
 				},
 				{
 					"id": 7,
 					"nome": "Assasinu",
-					"kills": 7
+					"kills": 7,
+					"old_names": [""]
 				},
 				{
 					"id": 3,
 					"nome": "Dono",
-					"kills": 2
+					"kills": 2,
+					"old_names": [""]
 				},
 				{
 					"id": 4,
 					"nome": "Zeh",
-					"kills": 5
+					"kills": 5,
+					"old_names": [""]
 				},
 				{
 					"id": 5,
 					"nome": "Oootsimo",
-					"kills": 10
+					"kills": 10,
+					"old_names": [""]
 				},
 				{
 					"id": 8,
 					"nome": "Mal",
-					"kills": 0
+					"kills": 0,
+					"old_names": [""]
 				}
 			]
 		}
@@ -411,6 +512,18 @@
 		"status": {
 			"total kills": 3,
 			"players": [
+				{
+					"id": 2,
+					"nome": "Do",
+					"kills": 0,
+					"old_names": ["Do"]
+				},
+				{
+					"id": 3,
+					"nome": "Oootsimo",
+					"kills": 0,
+					"old_names": ["Isgalamido"]
+				}
 			]
 		}
 	},
@@ -419,28 +532,55 @@
 		"status": {
 			"total kills": 0,
 			"players": [
+				{
+					"id": 4,
+					"nome": "Isgalamido",
+					"kills": 0,
+					"old_names": ["Isgalamido"]
+				},
+				{
+					"id": 3,
+					"nome": "Oootsimo",
+					"kills": 0,
+					"old_names": ["Oootsimo"]
+				},
+				{
+					"id": 6,
+					"nome": "Zeh",
+					"kills": 0,
+					"old_names": ["Zeh"]
+				}
 			]
 		}
 	},
 	{
 		"game": 17,
 		"status": {
-			"total kills": 13,
+			"total kills": 11,
 			"players": [
+				{
+					"id": 3,
+					"nome": "Oootsimo",
+					"kills": 1,
+					"old_names": ["Zeh"]
+				},
+				{
+					"id": 2,
+					"nome": "Do",
+					"kills": 0,
+					"old_names": ["Do"]
+				},
 				{
 					"id": 4,
 					"nome": "Isgalamido",
-					"kills": 1
+					"kills": 0,
+					"old_names": ["Isgalamido"]
 				},
 				{
 					"id": 6,
 					"nome": "Zeh",
-					"kills": 1
-				},
-				{
-					"id": 3,
-					"nome": "Oootsimo",
-					"kills": 2
+					"kills": 1,
+					"old_names": ["Mal"]
 				}
 			]
 		}
@@ -451,19 +591,34 @@
 			"total kills": 7,
 			"players": [
 				{
+					"id": 3,
+					"nome": "Oootsimo",
+					"kills": 0,
+					"old_names": ["Mal"]
+				},
+				{
 					"id": 6,
 					"nome": "Zeh",
-					"kills": 2
+					"kills": 2,
+					"old_names": ["Do"]
 				},
 				{
 					"id": 2,
 					"nome": "Isgalamido",
-					"kills": 1
+					"kills": 1,
+					"old_names": ["Isgalamido"]
+				},
+				{
+					"id": 4,
+					"nome": "Do",
+					"kills": 0,
+					"old_names": ["Do"]
 				},
 				{
 					"id": 5,
 					"nome": "Assasinu",
-					"kills": 2
+					"kills": 2,
+					"old_names": [""]
 				}
 			]
 		}
@@ -476,32 +631,38 @@
 				{
 					"id": 6,
 					"nome": "Zeh",
-					"kills": 20
+					"kills": 20,
+					"old_names": ["Mal"]
 				},
 				{
 					"id": 2,
 					"nome": "Isgalamido",
-					"kills": 14
+					"kills": 14,
+					"old_names": [""]
 				},
 				{
 					"id": 3,
 					"nome": "Oootsimo",
-					"kills": 10
+					"kills": 10,
+					"old_names": [""]
 				},
 				{
 					"id": 4,
 					"nome": "Dono",
-					"kills": 15
+					"kills": 15,
+					"old_names": [""]
 				},
 				{
 					"id": 5,
 					"nome": "Assasinu",
-					"kills": 9
+					"kills": 9,
+					"old_names": [""]
 				},
 				{
 					"id": 7,
 					"nome": "Mal",
-					"kills": 4
+					"kills": 4,
+					"old_names": [""]
 				}
 			]
 		}
@@ -514,12 +675,14 @@
 				{
 					"id": 4,
 					"nome": "Dono",
-					"kills": 2
+					"kills": 2,
+					"old_names": ["Mal"]
 				},
 				{
 					"id": 3,
 					"nome": "Oootsimo",
-					"kills": 1
+					"kills": 1,
+					"old_names": [""]
 				}
 			]
 		}
@@ -532,32 +695,38 @@
 				{
 					"id": 4,
 					"nome": "Dono",
-					"kills": 14
+					"kills": 14,
+					"old_names": ["Mal"]
 				},
 				{
 					"id": 6,
 					"nome": "Zeh",
-					"kills": 19
+					"kills": 19,
+					"old_names": [""]
 				},
 				{
 					"id": 2,
 					"nome": "Isgalamido",
-					"kills": 17
+					"kills": 17,
+					"old_names": [""]
 				},
 				{
 					"id": 5,
 					"nome": "Assasinu",
-					"kills": 19
+					"kills": 19,
+					"old_names": [""]
 				},
 				{
 					"id": 3,
 					"nome": "Oootsimo",
-					"kills": 23
+					"kills": 23,
+					"old_names": [""]
 				},
 				{
 					"id": 7,
 					"nome": "Mal",
-					"kills": 8
+					"kills": 8,
+					"old_names": [""]
 				}
 			]
 		}

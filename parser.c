@@ -24,9 +24,10 @@ bool checkInit(char *line);
 void killCheck(char *word, quake data[]);
 void writeJson(quake data[], FILE *txtSaida);
 void sumKills(quake data[]);
+void changeCheck(quake data[], FILE *txt);
 
 int main(int argc, char *argv[]) {
-    FILE *arqv = fopen(argv[1], "r"), *arqvSaida;
+    FILE *arqv = fopen("/home/felipe/Documentos/github_repositorios/log-parser/input-files/Quake.txt", "r"), *arqvSaida;
     quake data[MAX_MATCHES];
 
     for (size_t i = 0; i < MAX_MATCHES; i++) {
@@ -39,7 +40,7 @@ int main(int argc, char *argv[]) {
         perror("error");
         exit(1);
     }
-    arqvSaida = fopen(argv[2], "w+");
+    arqvSaida = fopen("/home/felipe/Documentos/github_repositorios/log-parser/output-files/saida.json", "w+");
 
     if (!arqvSaida) {
         perror("error");
@@ -66,12 +67,13 @@ void writeJson(quake data[], FILE *txtSaida) {
         fputs("\t\t\t\t{\n", txtSaida);
         fprintf(txtSaida, "\t\t\t\t\t\"id\": %s,\n", data[games - 1].acess[j].id);
         fprintf(txtSaida, "\t\t\t\t\t\"nome\": \"%s\",\n", data[games - 1].acess[j].name);
-        fprintf(txtSaida, "\t\t\t\t\t\"kills\": %d\n", data[games - 1].acess[j].kills);
+        fprintf(txtSaida, "\t\t\t\t\t\"kills\": %d,\n", data[games - 1].acess[j].kills);
+        fprintf(txtSaida, "\t\t\t\t\t\"old_names\": [\"%s\"]\n", data[games - 1].acess[j].oldNames);
         (j == (controlPlayers - 1)) ? fputs("\t\t\t\t}\n", txtSaida) : fputs("\t\t\t\t},\n", txtSaida);
     }
     fputs("\t\t\t]\n", txtSaida);
     fputs("\t\t}\n", txtSaida);
-    games == MAX_MATCHES-1 ? fputs("\t}\n", txtSaida) : fputs("\t},\n", txtSaida);
+    games == MAX_MATCHES - 1 ? fputs("\t}\n", txtSaida) : fputs("\t},\n", txtSaida);
 }
 
 void readLine(quake data[], FILE *txt, FILE *txtSaida) {
@@ -84,12 +86,26 @@ void readLine(quake data[], FILE *txt, FILE *txtSaida) {
         word = strtok(line, " ");
         do {
             while (word) {
+                if (!strcmp("ClientUserinfoChanged:", word)) {
+                    word = strtok(NULL, " ");
+                    word = strtok(NULL, "n\\");
+                    strcpy(data[games - 1].acess[controlPlayers].oldNames, word);
+                    changeCheck(data, txt);
+                }
                 if (!strcmp("Kill:", word)) {
                     killCheck(word, data);
                 }
 
                 if (!strcmp("ShutdownGame:\r\n", word)) {
                     writeJson(data, txtSaida);
+                    for (size_t i = 0; i < MAX_PLAYERS; i++)
+                    {
+                    memset(data[games-1].acess[i].id,'\0',50);
+                    memset(data[games-1].acess[i].name,'\0',50);
+                    memset(data[games-1].acess[i].oldNames,'\0',50);
+                    data[games-1].acess[i].kills =0;
+                    }
+                    
                     controlPlayers = 0;
                     return;
                 }
@@ -104,9 +120,9 @@ void readLine(quake data[], FILE *txt, FILE *txtSaida) {
 void killCheck(char *word, quake data[]) {
     word = strtok(NULL, " ");
 
-    if (strcmp("1022", word) != 0) {  
+    if (strcmp("1022", word) != 0) {
         for (size_t j = 0; j < MAX_PLAYERS; j++) {
-            if (!strcmp(data[games - 1].acess[j].id, word)) {  
+            if (!strcmp(data[games - 1].acess[j].id, word)) {
                 data[games - 1].acess[j].kills += 1;
                 return;
             }
@@ -125,7 +141,7 @@ void killCheck(char *word, quake data[]) {
         word = strtok(NULL, " ");
         word = strtok(NULL, " ");
         word = strtok(NULL, " ");
-        data[games-1].totalKills+=1;
+        data[games - 1].totalKills += 1;
         for (size_t j = 0; j < MAX_PLAYERS; j++) {
             if (!strcmp(data[games - 1].acess[j].name, word)) {
                 data[games - 1].acess[j].kills -= 1;
@@ -151,4 +167,17 @@ void sumKills(quake data[]) {
         sum += data[games - 1].acess[i].kills;
     }
     data[games - 1].totalKills += sum;
+}
+void changeCheck(quake data[], FILE *txt) {
+    char line[400], *word;
+    fgets(line, 400, txt);
+    word = strtok(line, " ");
+    word = strtok(NULL, " ");
+    if (!strcmp("ClientUserinfoChanged:", word)) {
+        word = strtok(NULL, " ");
+        strcpy(data[games - 1].acess[controlPlayers].id, word);
+        word = strtok(NULL, "n\\");
+        strcpy(data[games - 1].acess[controlPlayers].name, word);
+        controlPlayers++;
+    }
 }
