@@ -26,6 +26,7 @@ void writeJson(quake data[], FILE *txtSaida);
 void sumKills(quake data[]);
 void changeCheck(quake data[], FILE *txt);
 void insertNames(char *vetChar, char *word, char *lineComplete);
+void cleanData(quake data[]);
 
 int main(int argc, char *argv[]) {
     FILE *arqv = fopen(argv[1], "r"), *arqvSaida;
@@ -78,9 +79,19 @@ void writeJson(quake data[], FILE *txtSaida) {
     games == MAX_MATCHES - 1 ? fputs("\t}\n", txtSaida) : fputs("\t},\n", txtSaida);
 }
 
+void cleanData(quake data[]) {
+    for (size_t i = 0; i < MAX_PLAYERS; i++) {
+        memset(data[games - 1].acess[i].id, '\0', 50);
+        memset(data[games - 1].acess[i].name, '\0', 50);
+        memset(data[games - 1].acess[i].oldNames, '\0', 50);
+        data[games - 1].acess[i].kills = 0;
+    }
+    data[games - 1].totalKills = 0;
+    controlPlayers = 0;
+}
+
 void readLine(quake data[], FILE *txt, FILE *txtSaida) {
     char line[400], lineComplete[400];
-    memset(line, '\0', 400);
     fgets(line, 400, txt);
 
     if (checkInit(line) == true) {
@@ -95,17 +106,9 @@ void readLine(quake data[], FILE *txt, FILE *txtSaida) {
                 if (!strcmp("Kill:", word)) {
                     killCheck(word, data);
                 }
-
                 if (!strcmp("ShutdownGame:\r\n", word)) {
                     writeJson(data, txtSaida);
-                    for (size_t i = 0; i < MAX_PLAYERS; i++) {
-                        memset(data[games - 1].acess[i].id, '\0', 50);
-                        memset(data[games - 1].acess[i].name, '\0', 50);
-                        memset(data[games - 1].acess[i].oldNames, '\0', 50);
-                        data[games - 1].acess[i].kills = 0;
-                    }
-
-                    controlPlayers = 0;
+                    cleanData(data);
                     return;
                 }
                 word = strtok(NULL, " ");
